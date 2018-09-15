@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
+/*
         header.add("Apple");
         header.add("Sumsung");
         header.add("Huwei");
@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         ExAdapter adapter = new ExAdapter(this,header,child);
         expandableListView.setAdapter(adapter);
+        */
 
 
 

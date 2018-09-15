@@ -106,10 +106,10 @@ public class MainActivity extends AppCompatActivity {
         list5.add("costly, hang");
         list5.add("popular");
         child.put(header.get(5), list);
-
+        */
         ExAdapter adapter = new ExAdapter(this,header,child);
         expandableListView.setAdapter(adapter);
-        */
+
 
 
 

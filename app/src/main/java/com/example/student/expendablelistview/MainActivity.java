@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onGroupExpand(int i) {
 
-                if(lastPosition!= 1 && lastPosition!= i){
+                if(lastPosition!= -1 && lastPosition!= i){
 
                     expandableListView.collapseGroup(lastPosition);
                 }
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadData() {
 
         String[] h= getResources().getStringArray(R.array.parent);
-        String[] c= getResources().getStringArray(R.array.parent);
+        String[] c= getResources().getStringArray(R.array.child);
         int pos= -1;
         for(int i=0; i<h.length; i++ ){
             header.add(h[i]);
@@ -102,14 +102,10 @@ public class MainActivity extends AppCompatActivity {
         list4.add("popular");
         child.put(header.get(4), list);
 
-        ArrayList<String> list5 = new ArrayList<>();
-        list5.add("costly, hang");
-        list5.add("popular");
-        child.put(header.get(5), list);
-
+    */
         ExAdapter adapter = new ExAdapter(this,header,child);
         expandableListView.setAdapter(adapter);
-         */
+
 
 
 

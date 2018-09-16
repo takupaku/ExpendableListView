@@ -83,7 +83,7 @@ public class ExAdapter extends BaseExpandableListAdapter {
             view = layoutInflater.inflate(R.layout.child_layout, null);
         }
 
-            String s = (String) getGroup(i);
+            String s = (String) getChild(i,i1);
             TextView textView = view.findViewById(R.id.tvChild);
             textView.setText(s);
 

@@ -9,6 +9,7 @@
    <ExpandableListView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:groupIndicator="@null"
        android:id="@+id/exlvId"
        android:divider="#000"
        android:dividerHeight="2dp"></ExpandableListView>
